@@ -1,0 +1,65 @@
+﻿.Contenedor {
+    background-color: #2b2a2a;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    margin-top: 10px;
+    width: 47% ;
+}
+
+    .Contenedor input[type=text] {
+        width: 45%;
+        margin: 8px 0;
+        padding: 6px 15px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-left: 8px;
+    }
+    .Contenedor input[type=submit] {
+        width: 20%;
+        background-color: #808080;
+        color: white;
+        padding: 8px 16px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    .Contenedor [type=submit]:hover {
+        background-color: #e7de20;
+        color: black;
+        font-weight: bold;
+    }
+
+    .Contenedor Label{
+        display:block;        
+    }
+
+.Contenedor1 {
+    width: 47%;
+    padding: 6px;
+}
+
+.Contenedor1 input[type=submit] {
+    width: 30%;
+    background-color: #808080;
+    color: white;
+    padding: 8px 16px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+.Contenedor1 [type=submit]:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

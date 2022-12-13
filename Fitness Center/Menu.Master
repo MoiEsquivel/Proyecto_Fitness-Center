@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Fitness_Center.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Inicio Fitness</title>
+    <link href="css/Menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Image ID="Image1" CssClass="img" runat="server" ImageUrl="~/images/Fitnes1.png" />
+            
+            <ul>                
+              <li><a href="Inicio.aspx">Inicio</a></li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Facturacion</a>
+                <div class="dropdown-content">
+                  <a href="Facturar.aspx">Nueva Factura</a>
+                  <a href="CatFacturas.aspx">Facturas</a> 
+                </div>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Catalogos</a>
+                <div class="dropdown-content">
+                  <a href="Catcliente.aspx">Clientes</a>
+                  <a href="CatDireccion.aspx">Direcciones</a>
+                  <a href="CatProducto.aspx">Productos</a>                  
+                </div>               
+              </li>
+              <li class="salir"><a href="Login.aspx">Salir</a></li>
+            </ul>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
